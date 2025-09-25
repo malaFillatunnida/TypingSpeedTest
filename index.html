@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tes Kecepatan Mengetik</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>⌨️ Tes Kecepatan Mengetik</h2>
+      <p>Ketik kata dan tekan <b>Enter</b></p>
+      <h1 id="word"></h1>
+      <input
+        type="text"
+        id="text"
+        autocomplete="off"
+        placeholder="Ketik di sini..."
+        disabled
+      />
+      <p class="time-container">Waktu tersisa: <span id="time">30</span>s</p>
+      <p class="score-container">
+        ✅ Benar: <span id="correct">0</span> | ❌ Salah:
+        <span id="wrong">0</span>
+      </p>
+      <div id="end-game-container" class="end-game-container"></div>
+      <button id="startBtn">Mulai Permainan</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
