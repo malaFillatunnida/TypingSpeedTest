@@ -54,12 +54,19 @@ h1 {
 }
 
 input {
+  width: 90%;
+  max-width: 350px;
+  padding: 12px 20px;
+  font-size: 18px;
   border: 0;
   border-radius: var(--border-radius);
-  font-size: 18px;
-  width: 350px;
-  padding: 12px 20px;
-  margin-top: 10px;
+}
+
+@media (max-width: 400px) {
+  input {
+    font-size: 16px;
+    padding: 10px 15px;
+  }
 }
 
 button {
